@@ -144,6 +144,16 @@ return {
         { name = "spell", group_index = 2 },
       },
     },
+    mapping = {
+      ["<Up>"] = require("cmp").mapping.select_prev_item(),
+      ["<Down>"] = require("cmp").mapping.select_next_item(),
+      ["<C-Space>"] = require("cmp").mapping.complete(),
+      ["<C-e>"] = require("cmp").mapping.close(),
+      ["<CR>"] = require("cmp").mapping.confirm {
+        behavior = require("cmp").ConfirmBehavior.Insert,
+        select = true,
+      },
+    },
   },
 
   {
