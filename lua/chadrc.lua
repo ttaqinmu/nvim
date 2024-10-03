@@ -5,12 +5,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
-
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+	theme = "onedarkmod",
 }
 
 return M
