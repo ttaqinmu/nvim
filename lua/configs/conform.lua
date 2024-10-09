@@ -1,4 +1,9 @@
 local options = {
+  formatters = {
+    black = {
+      prepend_args = { '--fast' },
+    }
+  },
   formatters_by_ft = {
     lua = { "stylua" },
     python = { "black" },
@@ -8,7 +13,7 @@ local options = {
   },
 
   format_on_save = {
-    timeout_ms = 500,
+    timeout_ms = 5000,
     lsp_fallback = true,
   },
 }
