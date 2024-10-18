@@ -148,7 +148,7 @@ return {
         ["<C-J>"] = require("cmp").mapping.select_next_item(),
         ["<C-Space>"] = require("cmp").mapping.complete(),
         ["<C-e>"] = require("cmp").mapping.close(),
-        ["<S-CR>"] = require("cmp").mapping.confirm {
+        ["<C-L>"] = require("cmp").mapping.confirm {
           behavior = require("cmp").ConfirmBehavior.Insert,
           select = false,
         },
