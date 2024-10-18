@@ -138,10 +138,10 @@ return {
     },
     opts = {
       sources = {
-        { name = "nvim_lsp", group_index = 2 },
-        { name = "copilot", group_index = 2 },
+        { name = "nvim_lsp", group_index = 1 },
+        { name = "copilot", group_index = 3 },
         { name = "buffer", group_index = 2 },
-        { name = "spell", group_index = 2 },
+        { name = "spell", group_index = 4 },
       },
       mapping = {
         ["<C-K>"] = require("cmp").mapping.select_prev_item(),
